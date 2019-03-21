@@ -1,1 +1,38 @@
-<div>Home</div>
+<div style="display: flex; flex-direction: column;">
+
+  <div style="flex : 1 1 auto; min-height: 200px;">
+
+  </div>
+
+
+
+  <div style="flex : 1 1 auto;">
+
+    <div style="max-width:600px;">
+
+      <div class="areaHeader">Open Orders Activity</div>
+
+      <div class="homeordercomp_box">
+        <div class="homeordercomp_in " style="width: 100px;">Order Id</div>
+        <div class="homeordercomp_in border_left" style="width: 200px;">PO</div>
+        <div class="homeordercomp_in border_left" style="width: 100px;">Customer Id</div>
+        <div class="homeordercomp_in border_left " style="width: 100px;">Status</div>
+      </div>
+      <ng-container *ngFor="let x of getOrders()">
+
+        <app-ordercomp [_data]="x"></app-ordercomp>
+
+      </ng-container>
+      <button class="homeordercomp_righttxt">See All Orders</button>
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+</div>

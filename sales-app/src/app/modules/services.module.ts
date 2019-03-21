@@ -4,10 +4,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { InitService } from '../services/initService';
-import { GlobalService } from '../services/globalService';
-import { ApiService } from '../services/apiService';
-import { NavigationService } from '../services/navigationService';
+import { InitService } from '../services/init.Service';
+import { GlobalService } from '../services/global.Service';
+import { ApiService } from '../services/api.Service';
+import { NavigationService } from '../services/navigation.Service';
 
 
 

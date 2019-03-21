@@ -10,8 +10,8 @@ import {
 } from '@angular/core';
 
 
-import { GlobalService } from './services/globalService';
-import { NavigationService } from './services/navigationService';
+import { GlobalService } from './services/global.Service';
+import { NavigationService } from './services/navigation.Service';
 
 
 @Component({

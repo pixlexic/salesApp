@@ -1,8 +1,9 @@
 
 
 import { Injectable, Component } from '@angular/core';
-import { GlobalService } from '../services/globalService';
-import { NavigationService } from '../services/navigationService';
+import { ApiService } from '../services/api.Service';
+import { GlobalService } from './global.Service';
+import { NavigationService } from './navigation.Service';
 
 
 // import { refusedMain } from '../components/view_refused';
@@ -16,7 +17,8 @@ export class InitService {
 
 
     constructor(
-        private _navigationService: NavigationService
+        private _navigationService: NavigationService,
+        private _apiService: ApiService
     ) {
 
 
@@ -24,6 +26,18 @@ export class InitService {
             { view: 'HOME', comp: HomeMainComponent },
             // { view: 'REFUSED', comp: refusedMain  }
         ];
+
+
+
+
+
+
+        this._apiService.GetUserData().subscribe(
+            data => GlobalService.userData = data ,
+            // error => this.callError(error)
+            // () => console.log( 'Completed!' )
+        );
+
 
 
     }

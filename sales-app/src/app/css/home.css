@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+
+
+
+
+
+.homeordercomp_box{
+
+    display: flex;
+    width:100%;
+    margin: 5px;
+    padding: 3px 0;
+    color: #888888;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+
+.homeordercomp_in{
+
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 1px 10px;
+    
+}
+
+
+
+.homeordercomp_righttxt{
+    float: right;
+    color: #5698ff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+
+}

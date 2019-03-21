@@ -9,11 +9,11 @@ import { NgModule } from '@angular/core';
 // import { MaterialModule } from '@angular/material';
 
 
-
+import { OrderComponent } from '../components/ordersComp';
 
 @NgModule({
     declarations: [
-
+        OrderComponent
     ],
     imports: [
         BrowserModule,
@@ -22,7 +22,7 @@ import { NgModule } from '@angular/core';
 
     ],
     exports: [
-
+        OrderComponent
     ],
     entryComponents: [
 

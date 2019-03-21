@@ -1,1 +1,98 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+
+html {
+  height: 100%;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.areaHeader {
+    padding: 6px;
+    margin: 10px;
+    font-size: 18px;
+    border-bottom: solid 1px #cccccc;
+}
+
+
+.border_left {
+
+  border-left: solid 1px #cccccc;
+
+}
+
+
+.border_right {
+
+  border-right: solid 1px #cccccc;
+
+}
+
+
+
+
+
+
+
+
+button:focus {
+  outline: 0;
+}
+
+input,
+button,
+submit {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+
+/* unvisited link */
+
+a:link {
+  color: #063963;
+}
+
+
+/* visited link */
+
+a:visited {
+  color: #063963;
+}
+
+
+/* mouse over link */
+
+a:hover {
+  color: #065596;
+}
+
+
+/* selected link */
+
+a:active {
+  color: #063963;
+}

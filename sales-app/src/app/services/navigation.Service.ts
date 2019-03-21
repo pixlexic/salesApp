@@ -1,8 +1,8 @@
 
 import { Injectable, Component, ViewContainerRef, ComponentFactoryResolver, ViewChild, Directive } from '@angular/core';
 
-import { GlobalService } from '../services/globalService';
-import { ApiService } from '../services/apiService';
+import { GlobalService } from './global.Service';
+import { ApiService } from './api.Service';
 
 
 @Injectable()

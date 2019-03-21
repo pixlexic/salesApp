@@ -4,8 +4,8 @@
 
 import { Component, OnInit, HostListener } from '@angular/core';
 
-import { ApiService } from '../services/apiService';
-import { GlobalService } from '../services/globalService';
+import { ApiService } from '../services/api.Service';
+import { GlobalService } from '../services/global.Service';
 
 
 
@@ -36,15 +36,21 @@ export class HomeMainComponent implements OnInit {
 
     ngOnInit() {
 
-     console.log('home');
-
+        // const re = this._apiService.USERDATA();
 
     }
 
 
 
 
+    getOrders() {
 
+        if (GlobalService.userData != null) {
+
+            return GlobalService.userData.orders;
+        }
+
+    }
 
 
 }
