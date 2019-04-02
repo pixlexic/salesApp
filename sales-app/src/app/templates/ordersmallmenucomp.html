@@ -1,0 +1,17 @@
+<div #elm class="ordersmallcomp_box"  [ngStyle]="{'left': '' +  _bounds.l +   'px', 'top': '' + _bounds.t +   'px', 'height': '' + _bounds.h + 'px'}"  (transitionend)="transEnd($event)"  >
+<div><button class="ordersmallcomp_close closexSVG " style="float:right;" (click)=" close($event)" ></button></div>
+
+<div style="padding:6px;">
+<div class="ordersmallcomp_items" style="margin-top: 25px;" >{{getName()}}</div>
+<div class="ordersmallcomp_items" style="display: flex;" >
+    <div class="ordersmallcomp_itemsIn ordersmallcomp_itemsInHead" style=" width: 20px;">e:</div>
+    <div style="flex: 1 1 auto; "><a href="mailto:{{getEmail()}}">{{getEmail()}}</a></div>
+</div>
+<div class="ordersmallcomp_items" style="display: flex;" >
+    <div class="ordersmallcomp_itemsIn ordersmallcomp_itemsInHead" style=" width: 20px;">p:</div>
+    <div style="flex: 1 1 auto; ">{{getPhone()}}</div>
+</div>
+</div>
+
+
+</div>

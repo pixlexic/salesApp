@@ -25,6 +25,37 @@ body {
 
 
 
+
+
+.menuSVG {
+
+   
+    background-image: url(./assets/menu.svg);
+    /* background-size: 30px 30px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+
+}
+
+
+.closexSVG {
+
+   
+    background-image: url(./assets/closex.svg);
+    /* background-size: 30px 30px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+
+}
+
+
+
+
+
 .areaHeader {
     padding: 6px;
     margin: 10px;

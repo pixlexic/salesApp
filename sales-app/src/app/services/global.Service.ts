@@ -2,6 +2,8 @@ import { Injectable, Component } from '@angular/core';
 
  import { ApiService } from './api.Service';
  import { NavigationService } from './navigation.Service';
+ import { PopcontainerService } from './popcontainer.Service';
+ import { HelpersService } from '../services/helpers.Service';
 
 
 
@@ -23,10 +25,13 @@ export class GlobalService {
 
     static servApi: ApiService = null;
     static servNavi: NavigationService = null;
-
+    static servPop: PopcontainerService = null;
+    static servHelpers: HelpersService = null;
 
     static userData: any = null;
 
+
+    static popContainer = null;
 
 
 

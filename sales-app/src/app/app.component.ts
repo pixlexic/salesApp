@@ -12,7 +12,8 @@ import {
 
 import { GlobalService } from './services/global.Service';
 import { NavigationService } from './services/navigation.Service';
-
+import { PopcontainerService } from './services/popcontainer.Service';
+import { HelpersService } from './services/helpers.Service';
 
 @Component({
     selector: 'app-root',
@@ -24,11 +25,13 @@ export class AppComponent implements OnInit, AfterViewInit {
 
 
     @ViewChild('parent', { read: ViewContainerRef }) parent: ViewContainerRef;
-
+    @ViewChild('popcon', { read: ViewContainerRef }) PopCon: ViewContainerRef;
 
 
     constructor(
         private _navigationService: NavigationService,
+        private _popcontainerService: PopcontainerService,
+        private _helpersService: HelpersService,
 
     ) {
 
@@ -42,10 +45,11 @@ export class AppComponent implements OnInit, AfterViewInit {
 
         console.log('go');
         GlobalService.viewParent = this.parent;
+        GlobalService.popContainer = this.PopCon;
         //  globalService.servApi = this._apiService;
         GlobalService.servNavi = this._navigationService;
-
-
+        GlobalService.servPop = this._popcontainerService;
+        GlobalService.servHelpers = this._helpersService;
 
 
 

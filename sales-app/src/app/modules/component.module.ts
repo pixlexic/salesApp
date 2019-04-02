@@ -10,10 +10,12 @@ import { NgModule } from '@angular/core';
 
 
 import { OrderComponent } from '../components/ordersComp';
+import { OrderSmallMenuComponent  } from '../components/orderSmallMenu';
 
 @NgModule({
     declarations: [
-        OrderComponent
+        OrderComponent,
+        OrderSmallMenuComponent
     ],
     imports: [
         BrowserModule,
@@ -22,10 +24,11 @@ import { OrderComponent } from '../components/ordersComp';
 
     ],
     exports: [
-        OrderComponent
+        OrderComponent,
+        OrderSmallMenuComponent
     ],
     entryComponents: [
-
+        OrderSmallMenuComponent
     ],
     providers: [],
 

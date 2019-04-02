@@ -2,10 +2,11 @@
  * New typescript file
  */
 
-import { Component, OnInit, HostListener, Input } from '@angular/core';
+import { Component, OnInit, HostListener, Input, ViewContainerRef, ViewChild } from '@angular/core';
 
 import { ApiService } from '../services/api.Service';
 import { GlobalService } from '../services/global.Service';
+
 
 
 
@@ -19,7 +20,7 @@ import { GlobalService } from '../services/global.Service';
 
 export class OrderComponent implements OnInit {
 
-
+    @ViewChild( 'elm' , { read: ViewContainerRef }) _elm: ViewContainerRef;
     @Input() public _data = null;
 
 
@@ -39,6 +40,19 @@ export class OrderComponent implements OnInit {
         // const re = this._apiService.USERDATA();
 
     }
+
+
+
+
+
+
+   openMenu() {
+
+   GlobalService.servPop.openOrderSmallMenu(this._data, this._elm );
+
+   }
+
+
 
 
 

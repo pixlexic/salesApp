@@ -1,8 +1,10 @@
-
+<div style="display: flex;"> 
 <button class="ordercomp_box" >
 <div class="ordercomp_in " style="width: 100px; " > {{ getOrderId() }}</div>
 <div class="ordercomp_in border_left" style="width: 200px; " > {{ getPo() }}</div>
 <div class="ordercomp_in border_left" style="width: 100px;" > {{ getCustomerId() }}</div>
 <div class="ordercomp_in border_left " style="width: 100px; " > {{ getStatus() }}</div>
-
 </button>
+<button #elm class="ordercomp_in ordermenubutton menuSVG" title="Quick Menu" style="min-height:20px; min-width: 20px;" (click)="openMenu()" ></button>
+
+</div>

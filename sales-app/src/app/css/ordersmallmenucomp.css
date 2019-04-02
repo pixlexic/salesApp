@@ -1,0 +1,37 @@
+
+
+.ordersmallcomp_box {
+    position: absolute;
+    min-width: 200px;
+   /* min-height: 200px;*/
+    background-color: #f3f3f3;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.26);
+    overflow: hidden;
+    transition: top 0.5s, height 0.5s;
+}
+
+
+
+.ordersmallcomp_close{
+
+    float: right;
+    padding: 10px;
+    background-color: #cccccc;
+}
+
+.ordersmallcomp_items{
+
+    padding: 3px;
+
+}
+
+
+.ordersmallcomp_itemsIn{
+    flex: 0 1 auto;
+   
+}
+
+
+.ordersmallcomp_itemsInHead{
+    color: #cccccc; 
+}
