@@ -18,19 +18,26 @@ export class HelpersService {
     }
 
 
-  findSafePopupLocation(_bounds: BoundsModel) {
+    findSafePopupLocation(_bounds: BoundsModel) {
 
-  const bounds: BoundsModel = JSON.parse(JSON.stringify(_bounds));
+        const bounds: BoundsModel = JSON.parse(JSON.stringify(_bounds));
 
-if ( bounds.l < 0) { bounds.l = 6; }
-if ( bounds.t < 0) { bounds.t = 6; }
-if ( (bounds.l + bounds.w) > window.innerWidth ) { bounds.l = (window.innerWidth - (bounds.w )) - 6; }
-if ( (bounds.t + bounds.h) > window.innerHeight ) { bounds.t = (window.innerHeight - (bounds.h / 2)) - 6; }
+        if (bounds.l < 0) { bounds.l = 6; }
+        if (bounds.t < 0) { bounds.t = 6; }
+        if ((bounds.l + bounds.w) > window.innerWidth) { bounds.l = (window.innerWidth - (bounds.w)) - 6; }
+        if ((bounds.t + bounds.h) > window.innerHeight) { bounds.t = (window.innerHeight - (bounds.h / 2)) - 6; }
 
-return bounds;
-  }
+        return bounds;
+    }
 
 
+
+
+    getPercentage(ammount, outof) {
+
+        return Math.floor(ammount / outof * 100);
+
+    }
 
 
 

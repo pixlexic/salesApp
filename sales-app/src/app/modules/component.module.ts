@@ -11,11 +11,15 @@ import { NgModule } from '@angular/core';
 
 import { OrderComponent } from '../components/ordersComp';
 import { OrderSmallMenuComponent  } from '../components/orderSmallMenu';
+import { NoticesComponent } from '../components/noticesComp';
+import { UserComponent } from '../components/userComp';
 
 @NgModule({
     declarations: [
         OrderComponent,
-        OrderSmallMenuComponent
+        OrderSmallMenuComponent,
+        NoticesComponent,
+        UserComponent
     ],
     imports: [
         BrowserModule,
@@ -25,7 +29,9 @@ import { OrderSmallMenuComponent  } from '../components/orderSmallMenu';
     ],
     exports: [
         OrderComponent,
-        OrderSmallMenuComponent
+        OrderSmallMenuComponent,
+        NoticesComponent,
+        UserComponent
     ],
     entryComponents: [
         OrderSmallMenuComponent

@@ -1,0 +1,55 @@
+
+
+.noticescomp_box{
+
+    display: flex;
+    margin: 5px;
+    padding: 3px 10px;
+    color: #888888;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+
+.noticescomp_in{
+
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 1px 10px;
+    
+}
+
+
+
+.noticescomp_righttxt{
+    float: right;
+    color: #5698ff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+
+}
+
+
+
+
+.noticesrowcomp_box{
+
+    display: flex;
+    margin: 5px;
+    padding: 10px;
+   /* background-color: #efefef;*/
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+
+.noticesrowcomp_box:hover{
+
+    background-color: #e9e7e7;
+  
+    transition: background-color .5s;
+}
+
+

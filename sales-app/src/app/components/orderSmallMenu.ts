@@ -84,7 +84,7 @@ export class OrderSmallMenuComponent implements OnInit, AfterViewInit {
 
 
 
-        if ((this._selfElm.nativeElement.offsetHeight < 10) && this._shouldExit == true) {
+        if ((this._selfElm.nativeElement.offsetHeight < 10) && this._shouldExit === true) {
             GlobalService.popContainer.clear();
         }
 
@@ -117,5 +117,6 @@ export class OrderSmallMenuComponent implements OnInit, AfterViewInit {
 
         }
     }
+
 
 }

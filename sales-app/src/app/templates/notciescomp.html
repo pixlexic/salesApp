@@ -1,0 +1,19 @@
+<!-- <div class="areaHeader">Notices</div>
+-->
+
+
+  <div class="noticescomp_box">
+    <div class="noticescomp_in " style="">Notice</div>
+    <div class="noticescomp_in border_left" style="flex: 0 1 auto; width:200px;" >Date</div>
+  </div>
+
+<ng-container *ngFor = " let x of getNotices()"> 
+
+<div class="noticesrowcomp_box">
+    <div class="noticescomp_in" style = "text-align: left" >{{x.title}}</div>
+    <div class="noticescomp_in border_left" style="flex: 0 1 auto; width:200px;"  >{{x.createddate}}</div>
+</div>
+
+</ng-container>
+
+

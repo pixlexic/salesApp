@@ -1,38 +1,52 @@
-<div style="display: flex; flex-direction: column;">
-
-  <div style="flex : 1 1 auto; min-height: 200px;">
-
-  </div>
+<div>
 
 
+  <div class="homecomp_con" style="display: flex;">
 
-  <div style="flex : 1 1 auto;">
 
-    <div style="max-width:600px;">
 
-      <div class="areaHeader">Open Orders Activity</div>
 
-      <div class="homeordercomp_box">
-        <div class="homeordercomp_in " style="width: 100px;">Order Id</div>
-        <div class="homeordercomp_in border_left" style="width: 200px;">PO</div>
-        <div class="homeordercomp_in border_left" style="width: 100px;">Customer Id</div>
-        <div class="homeordercomp_in border_left " style="width: 100px;">Status</div>
+
+    <div style="flex : 1 1 auto;  padding:20px;">
+      <div style="display:flex; flex-direction: column;">
+            <div style="flex : 1 1 auto;  padding:20px;">
+            <app-usercomp></app-usercomp>
+            </div>
+        <div style="flex : 1 1 auto;  padding:20px;">
+          <div class="areaHeader">Order Activity</div>
+
+          <div style="display: flex">
+            <div class="homeordercomp_box">
+              <div class="homeordercomp_in " style="width: 100px;">Order Id</div>
+              <div class="homeordercomp_in border_left" style="width: 200px;">PO</div>
+              <div class="homeordercomp_in border_left" style="width: 100px;">Customer Id</div>
+              <div class="homeordercomp_in border_left " style="width: 100px;">Status</div>
+            </div>
+            <div class="homeordercomp_in  " style="width: 20px; padding:0;"></div>
+          </div>
+          <ng-container *ngFor="let x of getOrders()">
+
+            <app-ordercomp [_data]="x"></app-ordercomp>
+
+          </ng-container>
+          <button class="homeordercomp_righttxt">See All Orders</button>
+        </div>
       </div>
-      <ng-container *ngFor="let x of getOrders()">
+    </div>
 
-        <app-ordercomp [_data]="x"></app-ordercomp>
 
-      </ng-container>
-      <button class="homeordercomp_righttxt">See All Orders</button>
+    <div style="flex : 1 1 auto; max-width:600px;  padding:20px; background-color: #f7f7f7;">
+      <div #tabparelm class="hometabsbox">
+        <div #tabcursorelm class="hometabscursor"></div>
+        <button #tabstart class="hometabsitem " (click)="setTab($event)">Notices</button>
+        <button class="hometabsitem " (click)="setTab($event)">Customers</button>
+      </div>
+      <div>
+        <app-noticescomp *ngIf="checkTab('NOTICES')"></app-noticescomp>
+      </div>
     </div>
 
 
   </div>
-
-
-
-
-
-
 
 </div>

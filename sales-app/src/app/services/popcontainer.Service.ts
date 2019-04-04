@@ -13,6 +13,7 @@ import { GlobalService } from './global.Service';
 import { OrderSmallMenuComponent } from '../components/orderSmallMenu';
 
 
+
 import { BoundsModel } from '../models/boundsModel';
 
 
@@ -29,6 +30,7 @@ export class PopcontainerService {
 
 
     }
+
 
 
     openOrderSmallMenu(data, elem) {
@@ -52,10 +54,6 @@ export class PopcontainerService {
         }
 
 
-
-
-
-
         const bounds: BoundsModel = new BoundsModel(
             viewportOffset.top,
             viewportOffset.bottom,
@@ -75,6 +73,15 @@ export class PopcontainerService {
         */
 
     }
+
+
+
+
+
+
+
+
+
 
 
 

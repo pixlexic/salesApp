@@ -1,0 +1,33 @@
+<div>User: {{getName()}}</div>
+
+
+<div>Statistics</div>
+<div style="position: relative;">
+
+
+  <ng-container *ngFor="let x of _stats">
+    <div class="usercomp_bars" [ngStyle]="{'width': '' + x.percentage + '%', 'background-color':'#' + x.color + ''}">
+    </div>
+  </ng-container>
+
+
+
+</div>
+
+
+<div>
+
+  <ng-container *ngFor="let x of _stats">
+
+
+    <div style="display: flex; margin: 10px;">
+      <div [ngStyle]="{'background-color':'#' + x.color + ''}" style="flex: 0 1 auto; padding: 10px; margin: 0px 10px;"></div>
+      <div class="usercomp_stat" style="background-color: #f1f1f1;">{{x.name}}</div>
+      <div style="flex: 1 1 auto; padding:3px;">{{x.percentage}}%</div>
+    </div>
+
+
+  </ng-container>
+
+
+</div>

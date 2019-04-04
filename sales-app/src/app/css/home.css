@@ -1,14 +1,14 @@
 
 
+.homecomp_con{
 
-
-
-
-
-
-
-
-
+    position: absolute;
+    display: flex;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0px;
+}
 
 .homeordercomp_box{
 
@@ -40,4 +40,38 @@
     font-size: 16px;
     padding: 10px;
 
+}
+
+
+
+.hometabsbox{
+    position: relative;
+   
+    border-bottom: solid 1px #cccccc;
+}
+
+
+.hometabsitem{
+    padding: 10px 15px;
+    display: inline-block;
+    cursor: pointer;
+
+    transition: background-color 0.5s;
+}
+
+.hometabsitem:hover{
+    background-color: rgba(0,0,0,0.05);
+    transition: background-color 0.5s;
+}
+
+
+.hometabscursor{
+    position: absolute;
+    background-color: #5598ff;
+    padding: 2px 0;
+    width: 100px;
+    bottom: 0px;
+    left: 0px;
+
+    transition: left 0.5s, width 0.5s;
 }
